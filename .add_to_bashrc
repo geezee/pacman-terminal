@@ -1,0 +1,8 @@
+MESSAGE = "              Welcome to my computer! Pacman says hi too!"
+# draw pacman everytime the terminal is opened
+./pacman
+echo $MESSAGE
+
+# display pacman even if the user wants to clear
+# the terminal
+alias clear='clear; ./pacman; echo $MESSAGE'

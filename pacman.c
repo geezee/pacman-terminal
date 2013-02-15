@@ -153,8 +153,8 @@ string ghost(string c, int line) {
 		sprintf(m,"%s%s%s",c,blocks(14,b),blocks(2,s));
 	else if(line == 7)
 		sprintf(m,"%s%s%s%s%s%s%s%s%s",c,blocks(1,b),
-		blocks(3,s),blocks(2,b),blocks(3,s),blocks(1,b),
-		blocks(3,s),blocks(1,b),blocks(2,s));
+		blocks(3,s),blocks(2,b),blocks(3,s),blocks(2,b),
+		blocks(2,s),blocks(1,b),blocks(2,s));
 	else
 		sprintf(m,"");
 	return m;
