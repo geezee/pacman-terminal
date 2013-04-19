@@ -34,12 +34,13 @@ string cyan = "\033[01;36m";
 string blue = "\033[01;34m";
 string magenta = "\033[22;35m";
 string green = "\033[22;32m";
+string reset = "\033[22;m";
 
 // feel free to change the character that is used
 // to draw the pacmans and the ghosts, and to change the
 // seperator, by default the seperator is " " and the block
 // is "B"
-string b = "8";
+string b = "█";
 string s = " ";
 
 
@@ -58,10 +59,10 @@ int main() {
 	int line;
 	printf("\n");
 	for(line=1;line<8;line++) {
-		printf("%s%s%s%s%s\n",pacman(line),ghost(green,line),
+		printf("%s%s%s%s\n",pacman(line),
 		ghost(cyan,line),ghost(magenta,line),ghost(red,line));
 	}
-	printf("%s\n",white); // reset the color and skip a line
+	printf("%s\n",reset); // reset the color and skip a line
 	return 0;
 }
 
