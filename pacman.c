@@ -79,7 +79,7 @@ int main() {
 string blocks(int s, string b) {
 	int m;
 	// initialize the string
-	string output = (string)malloc(100000);
+	string output = (string)malloc(100);
 	strcpy(output,"");
 	for(m=0;m<s;m++)
 		strcat(output,b);
@@ -95,7 +95,7 @@ string blocks(int s, string b) {
  *	@return			line representation
  */
 string pacman(int line) {
-	string m = (string)malloc(10000000);
+	string m = (string)malloc(100);
 	int n;
 
 	if(line == 1)
@@ -127,7 +127,7 @@ string pacman(int line) {
  *	@return 		line representation
  */
 string ghost(string c, int line) {
-	string m = (string)malloc(1000000);
+	string m = (string)malloc(100);
 	int n;
 
 	if(line == 1)
